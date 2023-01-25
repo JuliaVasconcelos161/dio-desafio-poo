@@ -1,7 +1,7 @@
 import com.github.juliavasconceloscr161.desafio.Curso;
 import com.github.juliavasconceloscr161.desafio.Mentoria;
 
-import java.text.SimpleDateFormat;
+
 import java.time.LocalDate;
 
 
@@ -18,7 +18,7 @@ public class Main {
         curso2.setDescricao("Descrição Curso JS");
         curso2.setCargaHoraria(8);
         System.out.println(curso2);
-        
+
         Mentoria mentoria = new Mentoria("Mentoria java", "Descrição Mentoria", LocalDate.now());
         System.out.println(mentoria);
     }
