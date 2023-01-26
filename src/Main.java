@@ -8,6 +8,7 @@ import java.sql.Date;
 import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.function.Consumer;
 
 
 public class Main {
@@ -59,6 +60,11 @@ public class Main {
         System.out.println("Conteúdos Inscritos Vanessa: " + devVanessa.getConteudosInscritos());
         System.out.println("Conteúdos Concluídos Vanessa: " + devVanessa.getConteudosConcluidos());
         System.out.println("XP " + devVanessa.getNome() + " : " + devVanessa.calcularTotalXp());
+
+        System.out.println();
+        System.out.println("Devs inscritos no bootcamp:");
+        bootcamp.getDevsInscritos().forEach(System.out::println);
+
 
 
     }

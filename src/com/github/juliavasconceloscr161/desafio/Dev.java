@@ -68,6 +68,12 @@ public class Dev {
                 .sum();
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Dev{" +
+                "nome='" + nome + '\'' +
+                ", conteudosInscritos=" + conteudosInscritos +
+                ", conteudosConcluidos=" + conteudosConcluidos +
+                '}';
+    }
 }
